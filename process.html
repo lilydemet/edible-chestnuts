@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>process</title>
+    </head>
+    <body>
+      <div>
+        <br>
+        This is a very sparse outline of what I did incase it's of any interest. If so, I can absolutely flesh my process it out further. 
+        <br><br>
+        1. Go to <a href="https://opendata.vancouver.ca/explore/dataset/street-trees/export/?disjunctive.species_name&disjunctive.common_name&disjunctive.on_street&disjunctive.neighbourhood_name&sort=common_name&location=12,49.24181,-123.07211" target="_blank">Vancouver Open Data Portal</a> and download the entire dataset as a geoJSON file. 
+        <img src="./images/process1.png" style="width:80%">
+
+        <br><br><br>
+        2. Open <a href="https://qgis.org/download/" target="_blank">QGIS</a>, a free and open-source geographic information system (GIS), and load in the data. (See <a href="https://ubc-library-rc.github.io/gis-intro-qgis/content/add-data.html/" target="_blank">here</a> for documentation.) 
+        <img src="./images/process2.png" style="width:80%">
+
+        <br><br><br>
+        3. Delete the errant point in kazakhstan by toggling on edit mode, selecting the point on the map canvas, and deleting it. save changes and toggle off editing mode
+        <br><br><br>
+
+        4. Open the Attribute Table of your data layer and run a selection query to select all edible chestnut trees from the dataset. 
+        <img src="./images/process4.png" style="width:80%">
+        <br><br><br>
+        Toggle the Attribute Table view to see only the selected rows. 
+        <img src="./images/process4b.png" style="width:80%">
+
+        <br><br><br>
+        5. Return to your map canvas. Right click your layer. Export selection as new geoJSON file. 
+
+        <br><br><br>
+        6. It should also add to your map canvas. Close QGIS (saving your project if you wish). 
+        <img src="./images/process5.png" style="width:80%">
+
+        <br><br>
+        7. Use <a href="https://leafletjs.com/" target="_blank">Leaflet</a> to create a webmap. (See <a href="https://ubc-library-rc.github.io/gis-intro-leaflet/" target="_blank">here</a> for documentation.) I also created a Github Repository first, cloned it to my computer, and then worked from there. 
+      </div>
+
+
+    </body>
+
+</html>
